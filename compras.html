@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link do CSS -->
+    <link rel="stylesheet" href="styles/compras.css">
+</head>
+<body>
+
+    <!-- Banner de Fundo -->
+    <div id="banner"></div>
+
+    <!-- Container para o conteúdo -->
+    <div class="container">
+        <h2>Detalhes do Produto</h2>
+        <img src="robo 2.png" alt="Produto"> <!-- Imagem do produto -->
+        <p>Nome do Produto</p>
+        <p>R$3.999,90</p>
+
+        <h3>Informações para Pagamento</h3>
+        <form action="processar_pagamento.php" method="POST"> 
+            <label>Nome Completo:</label>
+            <input type="text" name="nome" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" required>
+
+            <label>Número do Cartão:</label>
+            <input type="text" name="cartao" required>
+
+            <label>CVV:</label>
+            <input type="text" name="cvv" required>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+    <script>
+        let lastScrollTop = 0; // Variável para armazenar a posição da última rolagem
+    
+        window.addEventListener("scroll", function() {
+            let header = document.querySelector("header");
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (currentScroll > lastScrollTop) {
+                // Rolando para baixo: esconder o cabeçalho
+                header.style.top = "-80px"; // Ajuste esse valor conforme necessário para esconder completamente
+            } else {
+                // Rolando para cima: mostrar o cabeçalho
+                header.style.top = "0";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar valores negativos
+        });
+    </script>    
+
+</body>
+</html>

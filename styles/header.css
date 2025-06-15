@@ -1,0 +1,104 @@
+header {
+    width: 100%;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-5);
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* Ajuste do container da navegação */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Ajuste do tamanho da logo */
+#nav_logo {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Lista de navegação */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 64px; /* Aumento do espaçamento entre os itens */
+}
+
+/* Estilo dos links de navegação */
+.nav-item a {
+    font-size: inherit;
+    text-decoration: none;
+    color: #1d1d1d; /* Cor preta padrão */
+    font-weight: 600;
+    padding: 10px 15px; /* Adicionando espaçamento interno */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito de hover para os links */
+.nav-item a:hover {
+    color: yellow; /* Cor amarela ao passar o mouse */
+}
+
+/* Remover a borda do item ativo */
+.nav-item.active a {
+    color: #1d1d1d; /* Mantém a cor preta no item ativo *//* Remover a borda */
+}
+
+/* Botão mobile */
+#mobile_btn {
+    display: none;
+}
+
+/* Menu Mobile */
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-primary-5);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+}

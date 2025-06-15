@@ -1,0 +1,113 @@
+/* Estilo do botão "Cadastre-se" */
+#openSignup, #openLogin {
+    background-color: #FFA500; /* Cor do fundo */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#openSignup:hover, #openLogin:hover {
+    background-color: #ff8c00; /* Cor ao passar o mouse */
+}
+
+/* Estilo para os botões "Fechar" dentro dos modais */
+#close-signup-modal, #close-login-modal {
+    background-color: #fcfbfb; /* Cor do botão */
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-signup-modal:hover, #close-login-modal:hover {
+    background-color: #e6e6e6; /* Cor ao passar o mouse */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Esconde os modais por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botões dentro do modal */
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #ff8c00;
+}
+
+/* Links dentro do modal */
+.modal-content p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-content p button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal-content p button:hover {
+    color: #0056b3;
+}
+
+/* Ícone de fechar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

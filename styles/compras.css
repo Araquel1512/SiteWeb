@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Título do cabeçalho */
+header h1 {
+    font-size: 24px;
+    display: inline;
+}
+
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%; /* Aumentando um pouco a largura para que ocupe o centro */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinhando o texto à esquerda */
+    position: absolute; /* Agora o container será posicionado em relação à tela */
+    top: 50%; /* Ajusta a posição vertical para o centro */
+    left: 50%; /* Ajusta a posição horizontal para o centro */
+    transform: translate(-50%, -50%); /* Centraliza completamente o container */
+    z-index: 100; /* Garantir que o container fique acima do fundo */
+}
+/* Imagem do produto */
+img {
+    width: 100%;
+    max-width: 200px; /* Diminuindo o tamanho da imagem */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botão de finalização */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Formulário */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de finalização */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
