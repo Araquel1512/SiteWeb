@@ -22,17 +22,21 @@ robo‑apollo‑store/
 ├─ index.html              ← página inicial (home)
 ├─ compra.html             ← página de compra e checkout
 │
-├─ css/                    ← estilos segmentados por seção
-│   ├─ header.css
-│   ├─ hero.css
-│   ├─ features.css
+├─ styles/                    ← estilos segmentados por seção
+│   ├─ aboutus.css
+│   ├─ compras.css
+│   ├─ footer.css
+│   ├─ heard.css
+│   └─ home.css
+│   ├─ menu.css
+│   ├─ modal.css
+│   ├─ styles.css
 │   ├─ testimonials.css
-│   └─ footer.css
 │
-├─ js/                     ← scripts JavaScript diversos
-│   └─ main.js
+├─ javascript/                     ← scripts JavaScript diversos
+│   └─ script.js
 │
-└─ src/images/             ← todos os assets visuais (PNG, JPG, SVG)
+└─ src/image/             ← todos os assets visuais (PNG, JPG, SVG)
     └─ …
     Por que múltiplos arquivos CSS?Cada seção (cabeçalho, banner, benefícios, depoimentos, rodapé) 
     possui um stylesheet específico, permitindo alterações localizadas sem risco de efeitos colaterais 
