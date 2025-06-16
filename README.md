@@ -16,7 +16,7 @@ Preservar organização de mídia e código‑fonte em um repositório versionad
 
 Demonstrar competências adquiridas no curso: HTML5, CSS3, JavaScript básico e Git/GitHub.
 
-robo‑apollo‑store/
+SiteWeb/
 │  README.md               ← você está aqui
 │
 ├─ index.html              ← página inicial (home)
